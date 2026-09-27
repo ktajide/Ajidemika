@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ADERONKE STORE — Luxury Catalogue</title>
+  <meta name="description" content="ADERONKE STORE — shoes, clothing, thrift, perfumes, men’s essentials and imported products. Order directly on WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <span class="brand-mark">Y</span>
+      <span>
+        <strong>ADERONKE STORE</strong>
+        <small>OSOGBO • OSUN STATE</small>
+      </span>
+    </a>
+    <div class="cart-wrap">
+      <button class="cart-button" id="cartButton" aria-label="Open cart">
+        <span>Cart</span><b id="cartCount">0</b>
+      </button>
+      <div class="cart-timer" id="cartTimerWrap">
+        <span>Cart expires in</span>
+        <strong id="cartTimer">12:00:00</strong>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <p class="eyebrow">CURATED FINDS • EVERYDAY LUXURY</p>
+        <h1>Style that feels<br><em>uniquely yours.</em></h1>
+        <p class="hero-copy">Shoes, clothing, thrift finds, perfumes, men's essentials and selected imported products.</p>
+        <a class="primary-btn" href="#products">Explore collection <span>→</span></a>
+      </div>
+      <div class="hero-card">
+        <span>NEW COLLECTION</span>
+        <strong>Discover<br>your next<br>favourite.</strong>
+      </div>
+    </section>
+
+    <section class="categories">
+      <button class="chip active" data-filter="All">All</button>
+      <button class="chip" data-filter="Shoes">Shoes</button>
+      <button class="chip" data-filter="Clothing">Clothing</button>
+      <button class="chip" data-filter="Thrift">Thrift</button>
+      <button class="chip" data-filter="Perfumes & Body Care">Perfumes</button>
+      <button class="chip" data-filter="Men's Essentials">Men's Essentials</button>
+      <button class="chip" data-filter="Imported">Imported</button>
+      <button class="chip" data-filter="Grooming">Grooming</button>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SHOP THE COLLECTION</p>
+          <h2>Featured products</h2>
+        </div>
+        <span id="productCount"></span>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>ADERONKE STORE</strong>
+      <p>Osogbo, Osun State, Nigeria</p>
+      <p><a href="mailto:dharkfx@hotmail.com">dharkfx@hotmail.com</a></p>
+    </div>
+    <a href="https://wa.me/2347039586838" target="_blank" rel="noopener">WhatsApp orders ↗</a>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="cart-head">
+      <div><p class="eyebrow">YOUR SELECTION</p><h2>Shopping cart</h2></div>
+      <button id="closeCart" class="icon-btn">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-foot">
+      <div class="total-row"><span>Total</span><strong id="cartTotal">₦0</strong></div>
+      <button id="whatsappOrder" class="whatsapp-btn">Order via WhatsApp <span>↗</span></button>
+      <small>You'll review the order in WhatsApp before sending it.</small>
+    </div>
+  </aside>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
